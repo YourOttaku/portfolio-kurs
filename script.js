@@ -38,11 +38,12 @@ function changeGame(gameKey) {
     displayImage.style.opacity = 0.5;
     setTimeout(() => {
         displayImage.src = gameImages[gameKey];
-        gameLink.href = gameLinks[gameKey]; 
+        if (gameLink) {
+            gameLink.href = gameLinks[gameKey];
+        }
         displayImage.style.opacity = 1;
     }, 150); 
 }
-
 // slideshow
 const galleryImages = [
     'images/poster1.jpg',
