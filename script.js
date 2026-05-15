@@ -23,11 +23,22 @@ const gameImages = {
     'ron': 'images/ron.png'
 };
 
+const gameLinks = {
+    'stalker': 'https://store.steampowered.com/franchise/stalker', 
+    'grb': 'https://store.steampowered.com/app/2231380/Tom_Clancys_Ghost_Recon_Breakpoint/',
+    'insurgency': 'https://store.steampowered.com/app/581320/Insurgency_Sandstorm/',
+    'cod': 'https://store.steampowered.com/app/1938090/Call_of_Duty/',
+    'ron': 'https://store.steampowered.com/app/1144200/Ready_or_Not/'
+};
+
 function changeGame(gameKey) {
     const displayImage = document.getElementById('game-img');
+    const gameLink = document.getElementById('game-link'); 
+
     displayImage.style.opacity = 0.5;
     setTimeout(() => {
         displayImage.src = gameImages[gameKey];
+        gameLink.href = gameLinks[gameKey]; 
         displayImage.style.opacity = 1;
     }, 150); 
 }
