@@ -27,7 +27,7 @@ const gameLinks = {
     'stalker': 'https://store.steampowered.com/franchise/stalker', 
     'grb': 'https://store.steampowered.com/app/2231380/Tom_Clancys_Ghost_Recon_Breakpoint/',
     'insurgency': 'https://store.steampowered.com/app/581320/Insurgency_Sandstorm/',
-    'cod': 'https://store.steampowered.com/app/1938090/Call_of_Duty/',
+    'cod': 'https://store.steampowered.com/franchise/callofduty/',
     'ron': 'https://store.steampowered.com/app/1144200/Ready_or_Not/'
 };
 
